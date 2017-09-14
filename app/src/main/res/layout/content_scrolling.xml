@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fdo.prasanga.scrollingactivity.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <!-- app:layout_behavior line prevents textview from moving to 0,0 -->
+    <!--Layout orientation says the orientation of the layout. It can be either hidden or set to vertical at default.-->
+
+   <!-- <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="This is not the actual ending. But to make it easity to read I have reduced the actual content." />
+        <!--   </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/text_margin"
+                   android:text="@string/large_text_3" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/text_margin"
+                   android:text="@string/large_text_4" />
+           </LinearLayout>-->
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
